@@ -62,3 +62,5 @@ body {
         color: #f00;
         transition: color 0.5s ease;
     }
+#navigation { z-index: 2; }
+body { z-index: 1;}
