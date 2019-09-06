@@ -48,3 +48,17 @@ body {
         list-style: none;
         /*border-right: 1px solid #D60000;*/
     }
+ #menu a {
+           padding-left:40px ;
+        padding-right:40px;
+        padding-bottom:20px;
+        padding-top: 20px;
+
+        color: #ffffff;
+        text-decoration: none;
+        font-family: Verdana;
+    }
+ #menu>li a:hover{
+        color: #f00;
+        transition: color 0.5s ease;
+    }
