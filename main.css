@@ -5,7 +5,7 @@
 
 }
 
-#body {
+body {
   background: #000 url(images/fon.jpg); 
    font-family: "Palatino Linotype",  serif;
      line-height: 32px;
@@ -64,5 +64,4 @@
         color: #f00;
         transition: color 0.5s ease;
     }
-#navigation { z-index: 2; }
-#body { z-index: 1;}
+
