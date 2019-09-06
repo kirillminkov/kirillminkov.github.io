@@ -6,7 +6,7 @@ img
 }
 
 body {
-  background: #bfbfbf; 
+  background: #fff; 
    font-family: "Palatino Linotype",  serif;
      line-height: 32px;
      font-size: 18px;
@@ -16,6 +16,7 @@ body {
 
 #text
 {
+  background: #ddd;
    display:block;
   margin-right: 0%;
   margin-left: 0%;
