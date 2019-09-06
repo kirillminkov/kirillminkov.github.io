@@ -6,7 +6,7 @@ img
 }
 
 body {
-  background: url(images/fon.jpg); 
+  background: #000 url(images/fon.jpg); 
    font-family: "Palatino Linotype",  serif;
      line-height: 32px;
      font-size: 18px;
