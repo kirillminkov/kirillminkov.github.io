@@ -6,6 +6,12 @@ h1 {
    text-align: center;
 }
 
+.bord1{
+ border: 4px inset Gold;
+ font-size: 20px;
+ background-color: #FFD700;
+}
+
 .black{
  background: #000000;
 }
