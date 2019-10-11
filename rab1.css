@@ -1,0 +1,25 @@
+body {
+   background: #c400ff;
+}
+.tabl {
+   margin-left:35%;
+   font-size:130%;
+   text-align: right;
+   background: red;
+}
+
+h1 {
+   text-align: center;
+}
+
+.black{
+ background: #000000;
+}
+.white{
+ background: #e5e5e5;
+}
+th, td {
+ width: 55px;
+ height: 55px;
+ text-align: right;
+}
