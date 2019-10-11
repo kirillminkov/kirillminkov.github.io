@@ -1,12 +1,6 @@
 body {
    background: #c400ff;
 }
-.tabl {
-   margin-left:35%;
-   font-size:130%;
-   text-align: right;
-   background: red;
-}
 
 h1 {
    text-align: center;
@@ -19,7 +13,7 @@ h1 {
  background: #e5e5e5;
 }
 th, td {
- width: 55px;
- height: 55px;
+ width: 5em; 
+ height: 5em; 
  text-align: right;
 }
