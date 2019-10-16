@@ -1,0 +1,35 @@
+body {
+  background-image: url(fon3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.kar {
+ width:1002px;
+ height:668px;
+  margin:auto;
+}
+
+.spisok {
+ padding-top:100px;
+ padding-bottom:100px;
+ background-color: grey;
+}
+.spisok2 {
+ padding-top:100px;
+ padding-bottom:100px;
+ background-color: #f0bf46;
+}
+
+.gr {
+ margin-left:70px;
+ margin-right:70px;
+}
+
+.zagol {
+ font-size: 25px;
+}
+
