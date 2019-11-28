@@ -4,7 +4,6 @@
  
     font-family:Comic Sans MS, Comic Sans, cursive ;
     font-size: 50px;
-    text-indent: 6em;
     color: Black;
 }
 .text2
@@ -13,7 +12,6 @@
 
     font-family: Helvetica, sans-serif;
     font-size: 70px;
-    text-indent:10em;
     color: #faf518;
 }
 .text3
@@ -22,7 +20,6 @@
     font-family: Courier New, monospace;
     font-style: italic;
     font-size: 90px;
-    text-indent: 14em;
     color: #1bfadb;
 }
 .text1:hover
