@@ -3,7 +3,7 @@
     background-color: #d3f1ff;
  
     font-family:Comic Sans MS, Comic Sans, cursive ;
-    font-size: 50px;
+    font-size: 70px;
     color: Black;
 }
 .text2
@@ -11,7 +11,7 @@
     background-color: #2817ff;
 
     font-family: Helvetica, sans-serif;
-    font-size: 70px;
+    font-size: 50px;
     color: ##eb0e6e;
 }
 .text3
@@ -19,8 +19,8 @@
     background-color: #ff0f03;
     font-family: Courier New, monospace;
     font-style: italic;
-    font-size: 90px;
-    color: #ed400c;
+    font-size: 60px;
+    color: #000000;
 }
 .text1:hover
 {
@@ -32,5 +32,5 @@
 }
 .text3:hover
 {
-    background-color: #000dff;
+    background-color: #be09eb;
 }
