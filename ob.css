@@ -12,7 +12,7 @@
 
     font-family: Helvetica, sans-serif;
     font-size: 70px;
-    color: #faf518;
+    color: ##eb0e6e;
 }
 .text3
 {
@@ -20,7 +20,7 @@
     font-family: Courier New, monospace;
     font-style: italic;
     font-size: 90px;
-    color: #1bfadb;
+    color: #ed400c;
 }
 .text1:hover
 {
@@ -28,9 +28,9 @@
 }
 .text2:hover
 {
-    background-color: #fffa1c;
+    background-color: #eeff00;
 }
 .text3:hover
 {
-    background-color: #ff7193;
+    background-color: #000dff;
 }
