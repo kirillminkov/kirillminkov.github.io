@@ -1,8 +1,8 @@
 .text1
 {
     background-color: #d3f1ff;
-    font-family: Bradley Hand, cursive;
-    font-style: italic;
+ 
+    font-family:Comic Sans MS, Comic Sans, cursive ;
     font-size: 50px;
     text-indent: 6em;
     color: Black;
@@ -10,8 +10,8 @@
 .text2
 {
     background-color: #2817ff;
-    font-family: Snell Roundhand;
-    font-style: italic;
+
+    font-family: Helvetica, sans-serif;
     font-size: 70px;
     text-indent:10em;
     color: #faf518;
@@ -19,7 +19,7 @@
 .text3
 {
     background-color: #ff0f03;
-    font-family: Trattatello, fantasy;
+    font-family: Courier New, monospace;
     font-style: italic;
     font-size: 90px;
     text-indent: 14em;
