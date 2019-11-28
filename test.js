@@ -29,7 +29,7 @@ function reset()
 
 function q111()
 {
-var otvet=[2,6,4,3,3,17100000,4,2,4,1];	
+var otvet=[3,4,5,1,1,11.1];	
 ball=0;	
 var mass=document.getElementsByClassName('v2');
 
