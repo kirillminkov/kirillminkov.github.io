@@ -17,7 +17,7 @@ function CheckForm(FormID) {
     }
 
     function CheckAllAnswers() {
-        let array_of_correct_answers = ['2','0','02','1','01','02','0','2','2',"11"];
+        let array_of_correct_answers = ['2','0','02','1','01','02','0','2','2','11'];
         var ball=0;
 
         for (let i=1; i<=10; ++i )
