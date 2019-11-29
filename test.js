@@ -30,5 +30,5 @@ function CheckForm(FormID) {
                 ball++;
             }
         }
-        document.getElementById('end2').innerHTML="Молодец! Все задания верные!Количество верных ответов:"+ball;
+        document.getElementById('end2').innerHTML=""+ball;
     }
