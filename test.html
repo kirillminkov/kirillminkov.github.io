@@ -1,113 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>test</title>
-	<link rel="stylesheet" type="text/css" href="test.css">
-	
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Тест</title>
+
+    <link rel="stylesheet" href="Psevdoclass.css">
 </head>
-<body>
-     <h1> Тест по экономике предприятия </h1>
-	<div class="test">
-	<div>
-		<p>С какого момента фирма считается созданной?</p>
-			
-		<div>
-        	<input name="q2" value="1" class="v2" type="radio" checked /> С момента принятия устава
-    	</div>
-  
-    	<div>
-    	    <input name="q2" value="2" class="v2" type="radio" /> С момента заключения учредительного договора
+    <body>
 
-    	</div>
-  	
-    	<div>
-    	    <input name="q2" value="3" class="v2" type="radio" /> С момента государственной регистрации
-    	</div>	
-  	</div>
-    
-    
+
+<ol>
     <div>
-		<p>Что является производственным результатом деятельности предприятия?</p>
-			
-		<div>
-        	<input name="q1" value="4" class="v1" type="radio" checked /> Объем произведенной продукции
-    	</div>
-  
-    	<div>
-    	    <input name="q1" value="5" class="v1" type="radio" /> Выручка от реализации продукции
-
-    	</div>
-  	
-    	<div>
-    	    <input name="q1" value="6" class="v1" type="radio" /> Прибыль от реализации продукции
-    	</div>
-  	</div>
-    
-    
-    <div>
-		<p>При каких условиях общий объем продукции промышленного предприятия может быть определен в натуральном выражении?</p>
-			
-		<div>
-        	<input name="q3" value="4" class="v3" type="radio" checked /> Может быть определен всегда
-    	</div>
-  
-    	<div>
-    	    <input name="q3" value="5" class="v3" type="radio" /> Продукция должна быть однородной
-
-    	</div>
-  	</div>
-    
-  	<div>
-  		<p>Укажите, какая из перечисленных ниже организаций является коммерческой? </p>
-  		<div>
-        	<input name="var1" value="1" class="v4" type="checkbox" /> Производственный кооператив
-    	</div>
-  
-    	<div>
-    	    <input name="var2" value="1" class="v4" type="checkbox" /> Потребительский кооператив
-  	
-    	<div>
-    	    <input name="var3" value="2" class="v4" type="checkbox" /> Благотворительный фонд
-    	</div>
-    	
-
-  	</div>
-	
-<div>
-  		<p>Укажите какие из перечисленных услуг относятся к услугам производственного характера</p>
-  		<div>
-        	<input name="var7" value="1" class="v5" type="checkbox" /> Ремонт автотранспорта
-    	</div>
-  
-    	<div>
-    	    <input name="var8" value="2" class="v5" type="checkbox" /> Консультации по разработке бизнес-плана
-    	</div>
-  	
-    	<div>
-    	    <input name="var9" value="1" class="v5" type="checkbox" /> Монтаж оборудования у заказчика 
-    	</div>
-    	<div>
-    	    <input name="var10" value="3" class="v5" type="checkbox" /> Консультации юриста
-    	</div>
-  	</div>
-
-<div>
-		<p>Объем производственной продукции предприятия за год сократился на 10%. На сколько процентов цены выросли? </p> <input type="text" id="q1">
-	</div>
-
-    
-    
+    <li>
+        <form id="q1">
+           <p><b> С какого момента фирма считается созданной?</b></p>
+            <input type="radio" name="w1" value="answer1">  С момента принятия устава <br>
+            <input type="radio" name="w1" value="answer1">  С момента заключения учредительного договора <br>
+            <input type="radio" name="w1" value="answer1">  С момента государственной регистрации<br>
+        </form>
+    </li>
+	<li>
+        <form id="q5">
+            <b><p>Что является производственным результатом деятельности предприятия?</b></p>
+            <input type="radio" name="q5" value="answer5"> Объем произведенной продукции <br>
+            <input type="radio" name="q5" value="answer5"> Выручка от реализации продукции <br>
+            <input type="radio" name="q5" value="answer5"> Прибыль от реализации продукции <br>
+        </form>
+    </li>
    
-	
-        <a href="test.pdf"><p>Ответы</p></a>
+
+    <li>
+        <form id="q3">
+            <p><b> Как лучше провести переоценку машин и оборудования? </b></p>
+            <input type="checkbox" name="q3" value="answer3">  По коэффициентам пересчета Госкомстата РФ <br>
+            <input type="checkbox" name="q3" value="answer3">  По ценам завода-изготовителя<br>
+            <input type="checkbox" name="q3" value="answer3">  С привлечением экспертов-оценщиков<br>
+          
+        </form>
+    </li>
+
+    <li>
+        <form id="q4">
+            <p><b> В каком предложении нет однородных членов: </b></p>
+            <input type="checkbox" name="q4" value="answer4">  Мыши, кроты, землеройки живут в корнях деревьев <br>
+            <input type="checkbox" name="q4" value="answer4">  Из кукурузы делают крахмал, муку, крупу<br>
+            <input type="checkbox" name="q4" value="answer4">  Осенью ребята запаслись желудями, шишками, семенами.<br>
+            <input type="checkbox" name="q4" value="answer4"> Из облаков собираются тучи, из туч идет дождь<br>
+        </form>
+    </li>
+
+
     
-	<div>
-        <p id="end2"></p>
-		<button onclick="q111();">Итог</button>
-	</div>	
+    <li>
+        <form id="q6">
+            <p><b>При каких условиях общий объем продукции промышленного предприятия может быть определен в натуральном выражении?</b></p>
+            <input type="radio" name="q6" value="answer6"> Может быть определен всегда<br>
+            <input type="radio" name="q6" value="answer6"> Продукция должна быть однородной<br>
+        </form>
+    </li>
+
+    <li>
+        <form id="q7">
+             <p><b>Укажите, какая из перечисленных ниже организаций является коммерческой? </b></p>
+            <input type="checkbox" name="q7" value="answer7"> Производственный кооператив <br>
+            <input type="checkbox" name="q7" value="answer7"> Потребительский кооператив <br>
+            <input type="checkbox" name="q7" value="answer7"> Благотворительный фонд <br>       
+         </form>
+    </li>
+
+    <li>
+        <form id="q8">
+            <p><b>Укажите какие из перечисленных услуг относятся к услугам производственного характера </b></p>
+            <input type="checkbox" name="q8" value="answer8"> Ремонт автотранспорта<br>
+            <input type="checkbox" name="q8" value="answer8">Консультации по разработке бизнес-плана<br>
+            <input type="checkbox" name="q8" value="answer8"> Монтаж оборудования у заказчика <br>
+            <input type="checkbox" name="q8" value="answer8">Консультации юриста<br>
+            
+         </form>
+    </li>
+
+    <li>
+        <form id="q9">
+            <p><b>К какой группе основным фондов следует отнести техническую библиотеку предприятия?</b></p>
+            <input type="radio" name="q9" value="answer9">Производственным<br>
+            <input type="radio" name="q9" value="answer9">Фондам неосновной деятельности<br>
+            <input type="radio" name="q9" value="answer9">Оборотным фондам<br>
+          
+        </form>
+    </li>
+
+    <li>
+        <form id="q10">
+            <p><b>К какому виду имущества следует отнести товарные знаки?</b></p>
+            <input type="radio" name="q10" value="answer10">Оборотным средствам<br>
+            <input type="radio" name="q10" value="answer10">Основным фондам<br>
+            <input type="radio" name="q10" value="answer10">Нематериальным активам<br>
+        </form>
+    </li>
+	
+	 <li>
+        <form id="q2">
+            <p><b> Объем производственной продукции предприятия за год сократился на 10%. На сколько процентов цены выросли? </b></p>
+         
+          <input type="text" name="q2" value="answer2"><br>
+        </form>
+    </li>
+    </div>
+</ol>
+<div>
+ <p id="end2"></p>
+     <button onclick="CheckAllAnswers()">Результат</button>
+</div>
+</div>	
 	<button onclick="reset();">Начать заново</button>
 </div>
+
 </body>
 <script type="text/javascript" src="test.js"></script>
 </html>
