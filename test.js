@@ -1,4 +1,4 @@
-function CheckForm(FormID) {
+ function CheckForm(FormID) {
         var MyForm = document.getElementById(FormID);
         var text = "";
         var i;
@@ -17,7 +17,7 @@ function CheckForm(FormID) {
     }
 
     function CheckAllAnswers() {
-        let array_of_correct_answers = ['2','0','02','1,','01','02','0','2','11.1'];
+        let array_of_correct_answers = ['2', 'порыв разметал', '02', '3', '2', '2', '02', '14', '2', '2'];
         var ball=0;
 
         for (let i=1; i<=10; ++i )
@@ -30,5 +30,5 @@ function CheckForm(FormID) {
                 ball++;
             }
         }
-        document.getElementById('end2').innerHTML=""+ball;
+        alert ("Результаты ответов =" +ball);
     }
