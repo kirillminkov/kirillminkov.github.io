@@ -17,7 +17,7 @@ function CheckForm(FormID) {
     }
 
     function CheckAllAnswers() {
-        let array_of_correct_answers = ['2', 'порыв разметал', '02', '3', '2', '2', '02', '14', '2', '2'];
+        let array_of_correct_answers = ['2','0','02','1,','01','02','0','2','11.1'];
         var ball=0;
 
         for (let i=1; i<=10; ++i )
