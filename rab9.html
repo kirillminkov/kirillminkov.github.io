@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="main9.css">
+            <script type="text/javascript" src="q.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+</head>
+<body body ng-app>
+
+<div class="jumbotron text-center">
+  <h1>Использование фреймворков Bootstrap & AngularJS</h1>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Экономика</h3>
+      <p>Это наука, изучающая способы наиболее эффективного использования имеющихся ограниченных ресурсов. Основой экономики является производство товаров.</p>
+     
+    </div>
+    <div class="col-sm-4">
+      <h3>Медиаэкономика</h3>
+      <p>Это экономическая дисциплина, которая занимается изучением СМИ как отдельной отрасли рыночной экономики, а также условий и элементов медиапроизводства.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Статистика</h3>        
+      <p>Это наука, в которой излагаются общие вопросы сбора, измерения, мониторинга, анализа массовых статистических данных и их сравнение; изучение количественной стороны массовых общественных явлений в числовой форме. </p>
+    </div>
+  </div>
+</div>
+
+<form ng-app ng-controller="OrderFormController">
+    <h1>Services</h1>
+    <ul>
+        <!-- Запуск цикла обработки массива с перечнем услуг, назначается при нажатии элемента. При этом если нужно устанавливается активный css-класс. -->
+        <li ng-repeat="service in services" ng-click="toggleActive(service)" ng-class="{active:service.active}">
+            <!-- Обратите внимание на использование фильтра валюты, он задает формат вывода цены. -->
+            {{service.name}} <span>{{service.price | currency}}</span>
+        </li>
+    </ul>
+    <div class="total">
+        <!-- Подсчет общей стоимости всех выбранных услуг. Выводится по заданному формату валюты. -->
+        Total: <span>{{total() | currency}}</span>
+    </div>
+
+</body>
+</html>
