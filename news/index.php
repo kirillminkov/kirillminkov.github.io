@@ -1,63 +1,55 @@
-<?php
-  ///////////////////////////////////////////////////
-  // Блок "Новости"
-  // 2003-2006 (C) IT-студия SoftTime (http://www.softtime.ru)
-  // Симдянов И.В. (simdyanov@softtime.ru)
-  // Голышев С.В. (softtime@softtime.ru)
-  ///////////////////////////////////////////////////
-?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<title>Новости</title>
+<title>РќРѕРІРѕСЃС‚Рё</title>
 <link rel="StyleSheet" type="text/css" href="news.css">
 </head>
 <?php
-  // Выставляем уровень обработки ошибок (http://www.softtime.ru/info/articlephp.php?id_article=23)
+  // Р’С‹СЃС‚Р°РІР»СЏРµРј СѓСЂРѕРІРµРЅСЊ РѕР±СЂР°Р±РѕС‚РєРё РѕС€РёР±РѕРє (http://www.softtime.ru/info/articlephp.php?id_article=23)
   Error_Reporting(E_ALL & ~E_NOTICE); 
 
-  // Этот файл выводит первые $pnumber новостей
-  // Устанавлинваем соединение с базой данных
+  // Р­С‚РѕС‚ С„Р°Р№Р» РІС‹РІРѕРґРёС‚ РїРµСЂРІС‹Рµ $pnumber РЅРѕРІРѕСЃС‚РµР№
+  // РЈСЃС‚Р°РЅР°РІР»РёРЅРІР°РµРј СЃРѕРµРґРёРЅРµРЅРёРµ СЃ Р±Р°Р·РѕР№ РґР°РЅРЅС‹С…
   require_once("config.php");
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<p class="zagblock">НОВОСТИ</p>
+<p class="zagblock">РќРћР’РћРЎРўР</p>
 <?php
-  // Выясняем общее количество новостей в базе данных, для того чтобы
-  // правильно отображать ссылки на последующие новости.
+  // Р’С‹СЏСЃРЅСЏРµРј РѕР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РЅРѕРІРѕСЃС‚РµР№ РІ Р±Р°Р·Рµ РґР°РЅРЅС‹С…, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹
+  // РїСЂР°РІРёР»СЊРЅРѕ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊ СЃСЃС‹Р»РєРё РЅР° РїРѕСЃР»РµРґСѓСЋС‰РёРµ РЅРѕРІРѕСЃС‚Рё.
   $tot = mysql_query("SELECT count(*) FROM news WHERE hide='show' AND putdate <= NOW()");
   if ($tot)
   {
     $total = mysql_result($tot,0);
-    // Если в базе новостей меньше чем $pnumber
-    // выводим их без вывода ссылки "Все новости".
-    if($pnumber < $total) echo "<p class='linkblock'><a href=news.php class='linkblock'>Все новости</a>";
+    // Р•СЃР»Рё РІ Р±Р°Р·Рµ РЅРѕРІРѕСЃС‚РµР№ РјРµРЅСЊС€Рµ С‡РµРј $pnumber
+    // РІС‹РІРѕРґРёРј РёС… Р±РµР· РІС‹РІРѕРґР° СЃСЃС‹Р»РєРё "Р’СЃРµ РЅРѕРІРѕСЃС‚Рё".
+    if($pnumber < $total) echo "<p class='linkblock'><a href=news.php class='linkblock'>Р’СЃРµ РЅРѕРІРѕСЃС‚Рё</a>";
   }
-  else puterror("Ошибка при обращении к блоку новостей");
-  // Запрашиваем все видимые новости, т.е. те, у которых в базе данных hide='show',
-  // если это поле будет равно 'hide', новость не будет отображаться на странице
+  else puterror("РћС€РёР±РєР° РїСЂРё РѕР±СЂР°С‰РµРЅРёРё Рє Р±Р»РѕРєСѓ РЅРѕРІРѕСЃС‚РµР№");
+  // Р—Р°РїСЂР°С€РёРІР°РµРј РІСЃРµ РІРёРґРёРјС‹Рµ РЅРѕРІРѕСЃС‚Рё, С‚.Рµ. С‚Рµ, Сѓ РєРѕС‚РѕСЂС‹С… РІ Р±Р°Р·Рµ РґР°РЅРЅС‹С… hide='show',
+  // РµСЃР»Рё СЌС‚Рѕ РїРѕР»Рµ Р±СѓРґРµС‚ СЂР°РІРЅРѕ 'hide', РЅРѕРІРѕСЃС‚СЊ РЅРµ Р±СѓРґРµС‚ РѕС‚РѕР±СЂР°Р¶Р°С‚СЊСЃСЏ РЅР° СЃС‚СЂР°РЅРёС†Рµ
   $query = "SELECT * FROM news 
             WHERE hide='show' AND putdate <= NOW()
             ORDER BY putdate DESC
             LIMIT $pnumber";
   $new = mysql_query($query);
-  if(!$new) puterror("Ошибка при обращении к блоку новостей");
+  if(!$new) puterror("РћС€РёР±РєР° РїСЂРё РѕР±СЂР°С‰РµРЅРёРё Рє Р±Р»РѕРєСѓ РЅРѕРІРѕСЃС‚РµР№");
   if(mysql_num_rows($new) > 0)
   {
     while($news = mysql_fetch_array($new))
     {
-      // Выводим заголовок новости
+      // Р’С‹РІРѕРґРёРј Р·Р°РіРѕР»РѕРІРѕРє РЅРѕРІРѕСЃС‚Рё
       echo "<p class=newsblockzag><b>".$news['name']."</b></p>";
-      // Формируем анонс
-      // Переменная $numchar содержит примерное
-      // количество символов в анонсе
+      // Р¤РѕСЂРјРёСЂСѓРµРј Р°РЅРѕРЅСЃ
+      // РџРµСЂРµРјРµРЅРЅР°СЏ $numchar СЃРѕРґРµСЂР¶РёС‚ РїСЂРёРјРµСЂРЅРѕРµ
+      // РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРёРјРІРѕР»РѕРІ РІ Р°РЅРѕРЅСЃРµ
       $pos = strpos(substr($news['body'],$numchar), " ");
-      // Если новость длинная, то выводим троеточие...
+      // Р•СЃР»Рё РЅРѕРІРѕСЃС‚СЊ РґР»РёРЅРЅР°СЏ, С‚Рѕ РІС‹РІРѕРґРёРј С‚СЂРѕРµС‚РѕС‡РёРµ...
       if(strlen($news['body'])>$numchar) $srttmpend = "...";
       else $strtmpend = "";
-      // Выводим анонс
+      // Р’С‹РІРѕРґРёРј Р°РЅРѕРЅСЃ
       echo "<p class=newsblock>".substr($news['body'], 0, $numchar+$pos).$srttmpend;
-      echo "<br><a class=anewsblock href=news.php?id_news=".$news['id_news'].">подробнее</a></p>";
+      echo "<br><a class=anewsblock href=news.php?id_news=".$news['id_news'].">РїРѕРґСЂРѕР±РЅРµРµ</a></p>";
     }
   }
 ?>
